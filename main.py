@@ -49,7 +49,7 @@ if __name__ == "__main__":
     com_port = '/dev/ttyUSB0'
     list_com_ports = list(serial_ports())
 
-    
+
     while (any(com_port in s for s in list_com_ports)):
         com_port = str(raw_input("What COM Port to connect to: "))
     try:
